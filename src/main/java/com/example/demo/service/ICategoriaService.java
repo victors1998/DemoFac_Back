@@ -6,7 +6,7 @@ import com.example.demo.model.Categoria;
 
 public interface ICategoriaService {
 
-	void registrar (Categoria cat);
+	Categoria registrar (Categoria cat);
 	void editar(Categoria cat);
 	List<Categoria> listar();
 }

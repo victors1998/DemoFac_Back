@@ -16,8 +16,8 @@ public class CategoriaServiceImpl implements ICategoriaService{
 	private ICategoriaRepo data;
 	
 	@Override
-	public void registrar(Categoria cat) {
-		data.save(cat);	
+	public Categoria registrar(Categoria cat) {
+		return data.save(cat);	
 	}
 
 	@Override
