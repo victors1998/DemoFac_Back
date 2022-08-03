@@ -4,9 +4,7 @@ import java.util.List;
 
 import com.example.demo.model.Categoria;
 
-public interface ICategoriaService {
+public interface ICategoriaService extends ICRUD<Categoria> {
 
-	Categoria registrar (Categoria cat);
-	void editar(Categoria cat);
-	List<Categoria> listar();
+	
 }

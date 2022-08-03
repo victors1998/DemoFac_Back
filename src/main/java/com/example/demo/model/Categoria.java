@@ -7,6 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
+
+
 @Entity
 @Table(name = "categoria")
 public class Categoria {
@@ -42,6 +45,4 @@ public class Categoria {
 	}
 	
 	
-	
-
 }

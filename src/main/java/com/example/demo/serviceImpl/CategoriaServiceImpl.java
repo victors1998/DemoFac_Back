@@ -16,18 +16,18 @@ public class CategoriaServiceImpl implements ICategoriaService{
 	private ICategoriaRepo data;
 	
 	@Override
-	public Categoria registrar(Categoria cat) {
-		return data.save(cat);	
-	}
-
-	@Override
-	public void editar(Categoria cat) {
-		data.save(cat);
+	public Categoria registrar(Categoria obj) {
+		return data.save(obj);	
 	}
 
 	@Override
 	public List<Categoria> listar() {		
 		return data.findAll();
+	}
+
+	@Override
+	public Categoria modificar(Categoria obj) {	
+		return data.save(obj);
 	}
 
 }

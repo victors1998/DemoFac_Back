@@ -42,7 +42,7 @@ public class CategoriaController {
 	
 	@PutMapping
 	public ResponseEntity<Object> modificar (@Validated @RequestBody Categoria cat) {
-		service.editar(cat);
+		service.modificar(cat);
 		return new ResponseEntity<Object>(HttpStatus.CREATED);
 	}
 	
