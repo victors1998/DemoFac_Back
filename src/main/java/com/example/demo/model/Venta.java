@@ -48,6 +48,7 @@ public class Venta {
 			CascadeType.REMOVE}, fetch = FetchType.LAZY, orphanRemoval = true)
 	private List<DetalleVenta> detalleVenta;
 
+	
 	public List<DetalleVenta> getDetalleVenta() {
 		return detalleVenta;
 	}
